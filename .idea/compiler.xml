@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MybatisQuick" />
+        <module name="MP" />
+        <module name="CrudPlus" />
+        <module name="JpaPlus" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Jpa" target="1.8" />
+      <module name="VideoDemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CrudPlus" options="-parameters" />
+      <module name="Jpa" options="-parameters" />
+      <module name="JpaPlus" options="-parameters" />
+      <module name="MP" options="-parameters" />
+      <module name="MybatisQuick" options="-parameters" />
+      <module name="VideoDemo" options="-parameters" />
+    </option>
+  </component>
+</project>

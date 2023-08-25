@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    import axios from 'axios'
+    axios.get('http://localhost:8080/select/selectAll')
+        .then(function (response) {
+            // 请求成功时的处理逻辑
+           document.write(response.data)
+        })
+        .catch(function (error) {
+            // 请求失败时的处理逻辑
+            console.error(error);
+        });
+</script>
+</body>
+</html>

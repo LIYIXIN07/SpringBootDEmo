@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+</div>
+<div id="frame">
+    {{name}}
+</div>
+
+<script type="module" >
+    import {
+        createApp
+    } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+    createApp({
+        url:'http://localhost:8080/select/selectAll',
+        data() {
+            return {
+                message: 'Hello Vue!'
+            }
+        }
+    }).mount('#app')
+
+</script>
+<script type="module">
+    import {
+        create
+    } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+ create({
+        data() {
+            return {
+                name:'liyixin'
+            }
+        }
+
+    }).mount('#frame')
+</script>
+
+
+</body>
+</html>
